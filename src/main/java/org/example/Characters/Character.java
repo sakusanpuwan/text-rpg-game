@@ -44,6 +44,7 @@ public abstract class Character {
         int damageTaken = (int) (damage * multiplier);
         int currentHealth = getHealth();
         setHealth(currentHealth - damageTaken);
+        System.out.println(damageTaken + " damage taken by " + getName() + ".");
     }
 
     public boolean isAlive() {
